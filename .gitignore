@@ -1,0 +1,20 @@
+# ----------------------------------------------------------------------
+# Configuraciones de Sistema
+# ----------------------------------------------------------------------
+.DS_Store             # Archivos de metadatos de macOS
+Thumbs.db             # Archivos de caché de miniaturas de Windows
+
+# ----------------------------------------------------------------------
+# Dependencias y Logs (Recomendado si usas Node.js o herramientas de build)
+# ----------------------------------------------------------------------
+/node_modules         # Ignora la carpeta de dependencias de Node.js
+npm-debug.log* # Archivos de log de NPM
+yarn-error.log        # Archivos de log de Yarn
+
+# ----------------------------------------------------------------------
+# Ficheros de Desarrollo o Temporales
+# ----------------------------------------------------------------------
+# Ignora cualquier archivo que termine en ~ (a menudo copias de seguridad de editores)
+*~
+# Ignora cualquier archivo temporal generado por VIM o Sublime Text
+*.swp
