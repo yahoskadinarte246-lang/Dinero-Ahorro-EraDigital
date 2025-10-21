@@ -118,7 +118,6 @@
                             <li><span class="font-semibold">Conceptos Clave:</span> Presupuestos, cuentas bancarias, pagos digitales, interés compuesto.</li>
                             <li><span class="font-semibold">Herramientas Digitales:</span> Apps de presupuesto para jóvenes, banca online, contenido educativo en video.</li>
                         </ul>
-                        <!-- LLM Feature 1: Goal Breakdown -->
                         <div class="mt-6 p-4 border border-blue-200 rounded-lg bg-blue-50">
                             <h3 class="text-xl font-semibold mb-3 text-[#00A6FB]">Generador de Metas de Ahorro ✨</h3>
                             <input type="text" id="goalInput" placeholder="Ej: Comprar una bicicleta nueva" class="p-2 border rounded-lg w-full mb-3 focus:ring-[#00A6FB] focus:border-[#00A6FB]">
@@ -155,7 +154,6 @@
                     <li><span class="font-semibold">Conceptos Clave:</span> Diversificación de portafolio, hipotecas, seguros, planificación fiscal y de jubilación.</li>
                     <li><span class="font-semibold">Herramientas Digitales:</span> Plataformas de inversión avanzadas, software de impuestos, agregadores financieros.</li>
                 </ul>
-                <!-- LLM Feature 2: Concept Explainer -->
                 <div class="mt-6 p-4 border border-green-200 rounded-lg bg-green-50">
                     <h3 class="text-xl font-semibold mb-3 text-[#00E08C]">Explicador de Conceptos Financieros ✨</h3>
                     <select id="conceptSelect" class="p-2 border rounded-lg w-full mb-3 focus:ring-[#00E08C] focus:border-[#00E08C]">
@@ -212,9 +210,10 @@
     </footer>
 
     <script type="module">
-        import { initializeApp } from "https://www.gstatic.com/firebasejs/11.6.1/firebase-app.js";
-        import { getAuth, signInAnonymously, signInWithCustomToken, onAuthStateChanged } from "https://www.gstatic.com/firebasejs/11.6.1/firebase-auth.js";
-        import { getFirestore, setLogLevel } from "https://www.gstatic.com/firebasejs/11.6.1/firebase-firestore.js";
+        // Se han actualizado las URLs de Firebase a una versión más reciente (10.0.0) para resolver el error 404.
+        import { initializeApp } from "https://www.gstatic.com/firebasejs/10.0.0/firebase-app.js";
+        import { getAuth, signInAnonymously, signInWithCustomToken, onAuthStateChanged } from "https://www.gstatic.com/firebasejs/10.0.0/firebase-auth.js";
+        import { getFirestore, setLogLevel } from "https://www.gstatic.com/firebasejs/10.0.0/firebase-firestore.js";
 
         const apiKey = "";
         const llmApiUrl = `https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash-preview-09-2025:generateContent?key=${apiKey}`;
