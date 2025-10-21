@@ -1,0 +1,95 @@
+/*
+ * Archivo: styles.css
+ * Descripción: Estilos CSS personalizados extraídos de la etiqueta <style> del index.html
+ * para complementar los estilos de Tailwind CSS.
+ * -------------------------------------------------------------------------------------
+ */
+
+/* Estilos de Tipografía y Fondo General */
+body {
+    /* Mantiene la fuente 'Inter' cargada desde Google Fonts */
+    font-family: 'Inter', sans-serif;
+    /* Color de fondo suave para toda la página */
+    background-color: #f0f4f8;
+}
+
+/* Estilos para los Contenedores de Gráficos (Chart.js) */
+.chart-container {
+    position: relative;
+    width: 100%;
+    /* Asegura que los gráficos no sean demasiado anchos en pantallas grandes */
+    max-width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+    /* Altura base para asegurar que el gráfico se muestre correctamente */
+    height: 300px;
+    max-height: 350px;
+}
+
+/* Media Query para Contenedores de Gráficos en Escritorio/Tablet */
+@media (min-width: 768px) {
+    .chart-container {
+        /* Aumenta ligeramente la altura para pantallas más grandes */
+        height: 350px;
+        max-height: 400px;
+    }
+}
+
+/* Estilos para los Pasos del Diagrama de Flujo */
+.flowchart-step {
+    background-color: white;
+    /* Borde del color principal (#00A6FB: Azul Cían) */
+    border: 2px solid #00A6FB;
+    color: #1f2937; /* Gris Oscuro de Tailwind (text-gray-800) */
+    padding: 1rem;
+    border-radius: 0.5rem; /* rounded-lg */
+    text-align: center;
+    font-weight: 600; /* font-semibold */
+    /* Sombra de caja sutil */
+    box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+    /* Transición suave para el efecto hover */
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.flowchart-step:hover {
+    /* Ligero levantamiento al pasar el ratón */
+    transform: translateY(-5px);
+    /* Sombra más marcada al pasar el ratón */
+    box-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
+}
+
+/* Estilos para las Flechas del Diagrama de Flujo */
+.flowchart-arrow {
+    color: #00A6FB;
+    font-size: 2.5rem;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0.5rem;
+}
+
+/* Estilos para la Sombra de las Tarjetas (Sections) */
+.card-shadow {
+    /* Sombra personalizada más profunda */
+    box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+}
+
+/* Estilos para Números Clave (KPI) */
+.kpi-number {
+    font-weight: 900; /* font-extrabold */
+    color: #00A6FB; /* Azul Cían */
+    line-height: 1;
+}
+
+/* Estilos para Etiquetas de Números Clave (KPI) */
+.kpi-label {
+    color: #4b5563; /* Gris de Tailwind (text-gray-600) */
+    font-weight: 600; /* font-semibold */
+}
+
+/* Estilos para el Gradiente del Encabezado */
+.header-gradient {
+    /* Gradiente de color (#00A6FB: Azul Cían a #00E08C: Verde Brillante) */
+    background: linear-gradient(120deg, #00A6FB, #00E08C);
+}
